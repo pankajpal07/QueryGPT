@@ -2,19 +2,21 @@ from mem0 import Memory
 import os
 from indexing import initiate_indexing
 from openai import OpenAI
+from dotenv import load_dotenv
 
+load_dotenv()
 def get_memory_client():
     config = {
         "version": "v1.1",
         "embedder": {
-            "provider": "gemini",
+            "provider": "openai",
             "config": {
-                "api_key": os.getenv('API_KEY'),
-                "model": "gemini-embedding-exp-03-07"
+                "api_key": os.getenv('OPENAI_API_KEY'),
+                "model": "text-embedding-3-small"
             },
         },
         "llm": {
-            "provider": "gemini",
+            "provider": "openai",
             "config": {
                 "api_key": os.getenv('API_KEY'),
                 "model": os.getenv('MODEL')
@@ -40,14 +42,16 @@ def get_memory_client():
 
     os.environ["MEM0_API_KEY"] = os.getenv('MEM0_API_KEY')
 
+    print(os.getenv('OPENAI_API_KEY'))
     mem_client = Memory.from_config(config)
+    # mem_client = "null"
     print("Memory client initialized successfully.")
     return mem_client
 
 def get_chat_client():
     chat_client = OpenAI(
-        api_key=os.getenv("API_KEY"),
-        base_url=os.getenv("BASE_URL")
+        api_key=os.getenv("API_KEY")#,
+        # base_url=os.getenv("BASE_URL")
     )
 
     return chat_client

@@ -1,0 +1,743 @@
+{
+    "schemas": [
+        {
+            "name": "bonga_um",
+            "tables": [
+                {
+                    "name": "add_date",
+                    "cols": [
+                        {
+                            "col": "date",
+                            "data_type": "date"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        }
+                    ]
+                },
+                {
+                    "name": "add_email",
+                    "cols": [
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "email",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "address",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "country_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "address",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "constituency",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "county",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "region",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "village",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "ward",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "company",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "admin_user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "address",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "color_preference1",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "color_preference2",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "company_email",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "constituency",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "country_code",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "country_flag",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "country_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "county",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "logo",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "mobile",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "number",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "region",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "schema_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "village",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "ward",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "address_id",
+                            "data_type": "int8"
+                        }
+                    ]
+                },
+                {
+                    "name": "country",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "code",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "flag",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "name",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "file",
+                    "cols": [
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "img_url",
+                            "data_type": "text"
+                        }
+                    ]
+                },
+                {
+                    "name": "jwt_session",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "expiry",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "token",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "logs_history",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "entity_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "entity_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "logs",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "voucher_number",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "new_json",
+                            "data_type": "varchar(100000)"
+                        },
+                        {
+                            "col": "old_json",
+                            "data_type": "varchar(100000)"
+                        },
+                        {
+                            "col": "event_name",
+                            "data_type": "varchar(255)"
+                        }
+                    ]
+                },
+                {
+                    "name": "otp",
+                    "cols": [
+                        {
+                            "col": "code_send_time",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "email_code",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "mobile_code",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        }
+                    ]
+                },
+                {
+                    "name": "permission",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "action",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "role",
+                    "cols": [
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "name",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "token",
+                    "cols": [
+                        {
+                            "col": "expired",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_valid",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "revoked",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "token",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "token_type",
+                            "data_type": "varchar(255)"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_info",
+                    "cols": [
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "mobile",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_reset_token",
+                    "cols": [
+                        {
+                            "col": "already_used",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "otp",
+                            "data_type": "varchar(1024)"
+                        }
+                    ]
+                },
+                {
+                    "name": "user_role_mapping",
+                    "cols": [
+                        {
+                            "col": "user_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "role_id",
+                            "data_type": "int8"
+                        }
+                    ]
+                },
+                {
+                    "name": "users",
+                    "cols": [
+                        {
+                            "col": "date",
+                            "data_type": "date"
+                        },
+                        {
+                            "col": "is_2fa_enabled",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_active",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_deleted",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_email_verified",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_organization",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "company_id",
+                            "data_type": "int8"
+                        },
+                        {
+                            "col": "created_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "id",
+                            "data_type": "bigserial"
+                        },
+                        {
+                            "col": "updated_on",
+                            "data_type": "timestamp(6)"
+                        },
+                        {
+                            "col": "lang_key",
+                            "data_type": "varchar(10)"
+                        },
+                        {
+                            "col": "first_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "last_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "middle_name",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "mobile",
+                            "data_type": "varchar(1024)"
+                        },
+                        {
+                            "col": "email",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "password",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "role",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "salutation",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "secret_key2fa",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "sex",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "status",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "username",
+                            "data_type": "varchar(255)"
+                        },
+                        {
+                            "col": "is_learning_service",
+                            "data_type": "bool"
+                        },
+                        {
+                            "col": "is_sms_service",
+                            "data_type": "bool"
+                        }
+                    ]
+                }
+            ],
+            "relationships": [
+                {
+                    "from_table": "address",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "address",
+                    "to_table": "country",
+                    "from_column": "country_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "company",
+                    "to_table": "users",
+                    "from_column": "admin_user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "company",
+                    "to_table": "address",
+                    "from_column": "address_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "file",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "jwt_session",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "logs_history",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "otp",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "token",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "user_info",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "user_reset_token",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "user_role_mapping",
+                    "to_table": "users",
+                    "from_column": "user_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "user_role_mapping",
+                    "to_table": "role",
+                    "from_column": "role_id",
+                    "to_column": "id"
+                },
+                {
+                    "from_table": "users",
+                    "to_table": "company",
+                    "from_column": "company_id",
+                    "to_column": "id"
+                }
+            ]
+        }
+    ]
+}
